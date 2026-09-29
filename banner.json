@@ -1,0 +1,68 @@
+{
+  "repo": "picokit-21-lora-echo",
+  "eyebrow": "PICOKIT // LESSON 21",
+  "title": "PICOKIT // LORA ECHO",
+  "subtitle": "TOKEN ECHO + AUTHENTICATED HEARTBEAT",
+  "accent": "#FFAB47",
+  "dim": "#9E6A2C",
+  "white": "#F3EAE5",
+  "cyan": "#7FD8E0",
+  "bg": "#110B04",
+  "bg_edge": "#050301",
+  "icon": "antenna",
+  "panel_status": "ACK 7  ·  ECHO  ·  AEAD :ON",
+  "chips": [
+    {
+      "label": "TOKEN",
+      "value": "5 s"
+    },
+    {
+      "label": "ACK",
+      "value": "7"
+    },
+    {
+      "label": "KEY",
+      "value": "argon2id"
+    },
+    {
+      "label": "RADIO",
+      "value": "-32 dBm"
+    }
+  ],
+  "terminal": [
+    "$ gateway listen /dev/cu.usbserial-A50285BI",
+    "[*] node 00021  seq 18  HEARTBEAT  AEAD ok",
+    "[*] anti-replay window ok  counter 18",
+    "[+] echo token sent  ack 7  logged",
+    "[+] ack sent  rssi -32  snr 9.0"
+  ],
+  "categories": [
+    "ECHO",
+    "TOKEN",
+    "SECURE",
+    "LINK"
+  ],
+  "cards": [
+    {
+      "tag": "TX-01",
+      "label": "token",
+      "value": "5 s"
+    },
+    {
+      "tag": "RX-01",
+      "label": "echo",
+      "value": "ack"
+    },
+    {
+      "tag": "HB-01",
+      "label": "heartbeat",
+      "value": "5 s"
+    }
+  ],
+  "footer": [
+    "1 NODE  ·  1 GATEWAY  ·  2 WAY LORA  ·  NO PLAINTEXT",
+    "PICOKIT SERIES  ·  OUTPUT  ·  INPUT  ·  RADIO  ==[ ECHO ]=="
+  ],
+  "layout": "panel",
+  "stat": "5 s"
+}
